@@ -56,23 +56,26 @@ class ApplicationController < Sinatra::Base
     @user = User.find_by(:email => params[:email], :name => params[:name])
     if @user
       session[:user_id] = @user.id
+      redirect '/items'
     end
-    redirect '/items'
+    redirect '/'
   end
 
   post '/signup' do
     @user = User.find_by(:email => params[:email], :name => params[:name])
     if !@user
       @user = User.create(:email => params[:email], :name => params[:name])
+      session[:user_id] = @user.id
+      redirect '/items'
+    else
+      redirect '/'
     end
-    session[:user_id] = @user.id
-    redirect '/items'
   end
 
   get '/logout' do
     session[:user_id] = nil
     session[:error] = nil
-    redirect '/items'
+    redirect '/'
   end
 
 end
