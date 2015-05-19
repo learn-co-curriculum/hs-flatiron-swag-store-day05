@@ -1,6 +1,6 @@
 ## Flatiron Swag Shop!
 
-**If you've finished the previous days, you can ski p to step 12**
+**If you've finished the previous days, you can ski p to step 12** Don't forget to look back at all the work you did on the Fwitter page if you get stuck! 
 
 **Step 1** - Set up your app and MVC directories.
 
@@ -41,13 +41,13 @@ You can set your own price and decide the count that you have in stock.
 
 **Step 11** - Set up your `get '/items'` route to pull all of your items from the database and display them in your new `items.erb` template.
 
-**Step 12** You know how for some online stores, you have to have an account to shop? Let's set up that part of our Swag Shop. We need to create a user model in `app/models/user.rb` that inherits from ActiveRecord::Base. 
+**Step 12** You know how for some online stores, you have to have an account to shop? Let's set up that part of our Swag Shop. We need to create a user model in `app/models/user.rb`. The User class should inherit from `ActiveRecord::Base`. 
 
 **Step 13** We need to create a users table in the database with ID, name, and password attributes. You'll need to create a migration with `up` and `down` methods and then run that migration.
 
 **Step 14** We need to create a Sign up page for our users to create an account. Create a new view with a sign-up form.
 
-**Step 15** We need a controller action that processes the information from the form. This action should save the new user to the database.
+**Step 15** We need a controller action that processes the information from the sign-up form. This action should save the new user to the database.
 
 **Step 16** Now we need to set up sessions in our controller to maintain the state of a logged in user.
 
@@ -56,6 +56,7 @@ You can set your own price and decide the count that you have in stock.
 **Step 18** If a user isn't signed in, we'll want to restrict them from seeing all the awesome swag. Remember, they can't buy it if they're not logged in.
 
 **Step 19** Now we need users to be able to sign out. Let's create a sign out form that removes the `user_id` from the `session` hash.
+
 
 
 
