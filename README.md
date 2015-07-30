@@ -1,9 +1,4 @@
----
-tags: forms, active record, databases, kids, ruby, advanced, challenges
-language: ruby
-level: 3
-type: challenges
----
+
 
 ## Sinatra MVC Review: Dissect the Flatiron Swag Shop
 
